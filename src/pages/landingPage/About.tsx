@@ -5,7 +5,7 @@ import AboutCake from "../../assets/images/landing page/about/about-cake.png"
 
 const About = () => {
   return (
-    <div style={{background:"#D9D9D9", paddingTop:"20px"}}>
+    <div style={{background:"#D9D9D9", paddingTop:"20px", paddingBottom:"5%"}}>
       <Typography textAlign="center" variant='h1' color="#151A2E" fontWeight="bold" fontSize="65px" pt='15px' >About Us</Typography>
       <Grid container spacing={{md:8}} columns={{md:12, sm:8, xs:8}} sx={{mt:{md:'-23px',sm:'30px', xs:'40px'}}} display='flex' alignItems='center' justifyContent='center'>
         <Grid item md={6} sm={6} xs={6}>

@@ -4,6 +4,7 @@ import Theme from "./context/Theme"
 import TopNavigation from './components/TopNavigation';
 import Home from './pages/landingPage/Home';
 import About from './pages/landingPage/About';
+import Bakers from './pages/landingPage/Bakers';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <TopNavigation/>
       <Home/>
       <About/>
+      <Bakers/>
     </div>
     </Theme>
   );
