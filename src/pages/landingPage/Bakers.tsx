@@ -8,9 +8,9 @@ import Baker5 from '../../assets/images/landing page/bakers/baker5.png'
 
 const Bakers = () => {
   return (
-    <div>
+    <div style={{paddingBottom:"5%"}}>
         <Typography textAlign="center" variant='h1' fontFamily='Carattere' color='#ECC051' pt='0.5em' fontSize='80px' >Our Bakers</Typography>
-        <Grid container gap={8} gridAutoColumns={5} display="flex" alignItems="center" justifyContent="center" pt='1em'>
+        <Grid container gap={7} gridAutoColumns={5} alignItems="center" justifyContent="center" pt='1em'>
             <Grid item>
                 <div style={{display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center"}}>
                     <img src={Baker1} style={{width:"200px"}}/>

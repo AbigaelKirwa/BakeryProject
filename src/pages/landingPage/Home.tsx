@@ -6,8 +6,6 @@ import Confectionery from '../../assets/images/landing page/home/Confectionery.p
 import Doughnut from '../../assets/images/landing page/home/Doughnut.png';
 import Cookies from '../../assets/images/landing page/home/Cookies.png';
 
-
-
 const Home = () => {
   return (
     <div style={{background:"linear-gradient(to bottom right, #2C3260, #000406)", paddingBottom:"5%"}}>
