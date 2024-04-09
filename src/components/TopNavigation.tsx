@@ -30,7 +30,7 @@ function ResponsiveAppBar() {
   }
  
   return (
-    <AppBar position='static' sx={{background:"linear-gradient(to right, #151A2E, #2C3260)"}}>
+    <AppBar position='static' sx={{background:"linear-gradient(to right, #151A2E, #2C3260)"}} >
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             {/* this box is displayed when the screen is small in size */}
