@@ -7,7 +7,7 @@ const theme = createTheme({
             main: "#DFDFDF"
         }, 
         secondary:{
-            main: "#ECC051"
+            main: "#DFDFDF"
         }
     },
     typography:{

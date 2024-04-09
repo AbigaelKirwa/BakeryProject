@@ -30,7 +30,7 @@ function ResponsiveAppBar() {
   }
  
   return (
-    <AppBar position='static' sx={{background:"linear-gradient(to right, #151A2E, #2C3260)"}} >
+    <AppBar position='static' sx={{backgroundColor:"transparent"}} >
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             {/* this box is displayed when the screen is small in size */}
@@ -67,7 +67,7 @@ function ResponsiveAppBar() {
             {/* this box is displayed when the screen is large */}
             <Box sx={{flexGrow:1, display:{xs:'none', md:'flex'}}}>
               {pages.map((page)=>(
-                  <Button key={page} onClick={handleCloseNavMenu} sx={{my:2, px:3, color:'#ECC051', display:'block', fontWeight:'bold', textTransform:'none'}}>
+                  <Button key={page} onClick={handleCloseNavMenu} sx={{my:2, px:3, color:'#ECC051', display:'block', fontWeight:'600', fontSize:'13px', textTransform:'none'}}>
                     {page}
                   </Button>
               ))}
