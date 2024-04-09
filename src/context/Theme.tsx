@@ -4,10 +4,10 @@ import { themeType } from "../@types/types";
 const theme = createTheme({
     palette:{
         primary:{
-            main: "#151A2E"
+            main: "#ECC051"
         }, 
         secondary:{
-            main:"#ECC051"
+            main: "#151A2E"
         }
     },
     typography:{
