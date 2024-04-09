@@ -10,10 +10,10 @@ import Cookies from '../../assets/images/landing page/home/Cookies.png';
 
 const Home = () => {
   return (
-    <div style={{background:"linear-gradient(to bottom right, #2C3260, #151A2E)", height:"90vh"}}>
+    <div style={{background:"linear-gradient(to bottom right, #2C3260, #151A2E)"}}>
         <Typography textAlign="center" variant='h1' fontFamily='Carattere' color='white' pt='15px' >Oka Bakeries</Typography>
-        <Grid container alignItems="center" justifyContent="center" spacing={{xs:2, md:8}} columns={{xs:1, sm:8, md:12}} pl="4em" pt="3em">
-            <Grid container md={4}>
+        <Grid container alignItems="center" justifyContent="center" spacing={{xs:2, md:8}} columns={{xs:1, sm:8, md:12}} pt="3em" pb="1em" sx={{pl:{md:'4em',xs:'2em'}}}>
+            <Grid container xs={10} sm={8} md={4}>
                 <Grid item display="flex" flexDirection="column" justifyContent="center" alignItems="center">
                     <Toolbar sx={{gap:"1em"}}>
                         <img src={CakeIcon} alt='food' style={{width:"35%"}}/>
@@ -37,13 +37,13 @@ const Home = () => {
                     </Typography>
                 </Grid>
             </Grid>
-            <Grid container md={3}>
+            <Grid container sm={0} md={3} sx={{display:{md:'flex', sm:'none', xs:'none'}}} flexDirection="column" justifyContent="center" alignItems="center">
                 <Grid item display="flex" flexDirection="column" justifyContent="center" alignItems="center">
                     <img alt="cake" src={StrawBerryCake} style={{paddingLeft:"2em", width:"90%"}}/>
-                    <Button sx={{backgroundColor:"#ECC051", borderRadius:"50px", width:"200px", height:"50px", fontSize:"20px", color:"#151A2E", fontWeight:"bold"}}>Buy Now</Button>
+                    <Button sx={{backgroundColor:"#ECC051", borderRadius:"50px", width:"70%", height:"50px", fontSize:"120%", color:"#151A2E", fontWeight:"bold", marginBottom:"1em"}}>Buy Now</Button>
                 </Grid>
             </Grid>
-            <Grid container md={4}>
+            <Grid container xs={10} sm={8} md={4}>
                 <Grid item display="flex" flexDirection="column" justifyContent="center" alignItems="center">
                     <Toolbar sx={{gap:"1em"}}>
                         <img src={Doughnut} alt='food' style={{width:"25%"}}/>
