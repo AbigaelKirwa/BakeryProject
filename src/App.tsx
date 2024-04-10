@@ -6,6 +6,7 @@ import Home from './pages/landingPage/Home';
 import About from './pages/landingPage/About';
 import Bakers from './pages/landingPage/Bakers';
 import Categories from './pages/landingPage/Categories';
+import CustomerReviews from './pages/landingPage/CustomerReviews';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Categories/>
       <Bakers/>
       <About/>
+      <CustomerReviews/>
     </div>
     </Theme>
   );
