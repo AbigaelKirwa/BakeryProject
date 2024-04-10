@@ -7,6 +7,7 @@ import About from './pages/landingPage/About';
 import Bakers from './pages/landingPage/Bakers';
 import Categories from './pages/landingPage/Categories';
 import CustomerReviews from './pages/landingPage/CustomerReviews';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Bakers/>
       <About/>
       <CustomerReviews/>
+      <Footer/>
     </div>
     </Theme>
   );
