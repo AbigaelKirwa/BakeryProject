@@ -6,41 +6,42 @@ import Baker3 from '../../assets/images/landing page/bakers/baker3.png'
 import Baker4 from '../../assets/images/landing page/bakers/baker4.png'
 import Baker5 from '../../assets/images/landing page/bakers/baker5.png'
 
+const confectionaryDetails =[
+    {
+        image:Baker1,
+        name:'Dairy Fresh'
+    },
+    {
+        image:Baker2,
+        name:'Bakery Shop'
+    },
+    {
+        image:Baker3,
+        name:'The Bakery'
+    },
+    {
+        image:Baker4,
+        name:'Family Bakery'
+    },
+    {
+        image:Baker5,
+        name:'Pastry Shop'
+    },
+]
+
 const Bakers = () => {
   return (
     <div style={{paddingBottom:"5%"}}>
         <Typography textAlign="center" variant='h1' fontFamily='Carattere' color='#ECC051' pt='0.5em' fontSize='80px' >Our Bakers</Typography>
         <Grid container gap={7} gridAutoColumns={5} alignItems="center" justifyContent="center" pt='1em'>
-            <Grid item>
-                <div style={{display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center"}}>
-                    <img src={Baker1} style={{width:"200px"}}/>
-                    <Typography color='white' fontWeight='600' textAlign='center'>Daily Fresh</Typography>
-                </div>
-            </Grid>
-            <Grid item>
-                <div style={{display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center"}}>
-                    <img src={Baker2} style={{width:"170px"}}/>
-                    <Typography color='white' fontWeight='600' textAlign='center'>Bakery Shop</Typography>
-                </div>
-            </Grid>
-            <Grid item>
-                <div style={{display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center"}}>
-                    <img src={Baker3} style={{width:"150px"}}/>
-                    <Typography color='white' fontWeight='600' textAlign='center'>The Bakery</Typography>
-                </div>
-            </Grid>
-            <Grid item>
-                <div style={{display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center"}}>
-                    <img src={Baker4} style={{width:"160px"}}/>
-                    <Typography color='white' fontWeight='600' textAlign='center'>Family Bakery</Typography>
-                </div>
-            </Grid>
-            <Grid item>
-                <div style={{display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center"}}>
-                    <img src={Baker5} style={{width:"160px"}}/>
-                    <Typography color='white' fontWeight='600' textAlign='center'>Pastry Shop</Typography>
-                </div>
-            </Grid>
+            {confectionaryDetails.map((confectionaryDetail)=>(
+                <Grid item>
+                    <div style={{display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center"}}>
+                        <img src={confectionaryDetail.image} style={{width:"200px"}}/>
+                        <Typography color='white' fontWeight='600' textAlign='center'>{confectionaryDetail.name}</Typography>
+                    </div>
+                </Grid>
+            ))}
         </Grid>
     </div>
   )
