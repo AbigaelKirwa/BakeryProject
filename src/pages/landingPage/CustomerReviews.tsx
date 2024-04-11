@@ -6,6 +6,7 @@ import Review1 from '../../assets/images/landing page/customer_reviews/review1.p
 import Review2 from '../../assets/images/landing page/customer_reviews/review2.png'
 import Review3 from '../../assets/images/landing page/customer_reviews/review3.png'
 import TypographyHeader from '../../components/TypographyHeader';
+import StarRating from '../../components/StarRating';
 
 const CustomerReviews = () => {
   return (
@@ -26,13 +27,7 @@ const CustomerReviews = () => {
                         process was smooth, and I appreciated the various payment options 
                         available.
                     </Typography>
-                    <div style={{paddingTop:"5%", display:"flex", flexDirection:"row", alignItems:"center", justifyContent:"center",  gap:"3%"}}>
-                        <StarIcon sx={{color:"#ECC051"}}/>
-                        <StarIcon sx={{color:"#ECC051"}}/>
-                        <StarIcon sx={{color:"#ECC051"}}/>
-                        <StarIcon sx={{color:"#ECC051"}}/>
-                        <StarBorderIcon sx={{color:"#ECC051"}}/>
-                    </div>
+                    <StarRating/>
                 </div>
             </Grid>
             <Grid item md={4} sm={4} xs={3}>
@@ -45,13 +40,7 @@ const CustomerReviews = () => {
                         the expertise and passion of the bakers behind these delectable creations. Whether it 
                         was the fluffy croissants or the decadent cupcakes. 
                     </Typography>
-                    <div style={{paddingTop:"5%", display:"flex", flexDirection:"row", alignItems:"center", justifyContent:"center",  gap:"3%"}}>
-                        <StarIcon sx={{color:"#ECC051"}}/>
-                        <StarIcon sx={{color:"#ECC051"}}/>
-                        <StarIcon sx={{color:"#ECC051"}}/>
-                        <StarIcon sx={{color:"#ECC051"}}/>
-                        <StarBorderIcon sx={{color:"#ECC051"}}/>
-                    </div>
+                    <StarRating/>
                 </div>
             </Grid>
             <Grid item md={4} sm={4} xs={3}>
@@ -64,13 +53,7 @@ const CustomerReviews = () => {
                         game-changer. The website was visually appealing and easy to navigate, allowing me to 
                         explore the diverse range of treats on offer.
                     </Typography>
-                    <div style={{paddingTop:"5%", display:"flex", flexDirection:"row", alignItems:"center", justifyContent:"center",  gap:"3%"}}>
-                        <StarIcon sx={{color:"#ECC051"}}/>
-                        <StarIcon sx={{color:"#ECC051"}}/>
-                        <StarIcon sx={{color:"#ECC051"}}/>
-                        <StarIcon sx={{color:"#ECC051"}}/>
-                        <StarBorderIcon sx={{color:"#ECC051"}}/>
-                    </div>
+                    <StarRating/>
                 </div>
             </Grid>
         </Grid>
