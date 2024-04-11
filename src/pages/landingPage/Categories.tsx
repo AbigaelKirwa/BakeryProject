@@ -11,38 +11,14 @@ import Category8 from '../../assets/images/landing page/categories/category8.png
 import TypographyHeader from '../../components/TypographyHeader'
 
 const categoryDetails = [
-    {
-        image:Category1,
-        name:'Croissant'
-    },
-    {
-        image:Category2,
-        name:'Cookies'
-    },
-    {
-        image:Category3,
-        name:'Cupcakes'
-    },
-    {
-        image:Category4,
-        name:'Cakes'
-    },
-    {
-        image:Category5,
-        name:'Doughnuts'
-    },
-    {
-        image:Category6,
-        name:'Pies'
-    },
-    {
-        image:Category7,
-        name:'Bread'
-    },
-    {
-        image:Category8,
-        name:'Macaroons'
-    },
+    { image:Category1, name:'Croissant'},
+    { image:Category2, name:'Cookies'},
+    { image:Category3, name:'Cupcakes'},
+    { image:Category4, name:'Cakes'},
+    { image:Category5, name:'Doughnuts'},
+    { image:Category6, name:'Pies'},
+    { image:Category7, name:'Bread'},
+    { image:Category8, name:'Macaroons'},
 ]
 
 const Categories = () => {
