@@ -5,11 +5,14 @@ import StarBorderIcon from '@mui/icons-material/StarBorder';
 import Review1 from '../../assets/images/landing page/customer_reviews/review1.png'
 import Review2 from '../../assets/images/landing page/customer_reviews/review2.png'
 import Review3 from '../../assets/images/landing page/customer_reviews/review3.png'
+import TypographyHeader from '../../components/TypographyHeader';
 
 const CustomerReviews = () => {
   return (
     <div style={{paddingBottom:"5%"}}>
-        <Typography textAlign="center" variant='h1' color="#ECC051" fontWeight="bold" fontSize="65px" pt='1em'>Customer Reviews</Typography>
+        <TypographyHeader>
+            <div style={{color:"#ECC051"}}>Customer Reviews</div>
+        </TypographyHeader>
         <Grid container spacing={12} columns={{md:12, sm:8, xs:4}} alignItems='center' justifyContent='center' pt="5%" px="3%">
             <Grid item md={4} sm={4} xs={3}>
                 <div style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center'}}>

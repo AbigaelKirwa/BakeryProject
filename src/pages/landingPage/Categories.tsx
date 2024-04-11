@@ -8,11 +8,14 @@ import Category5 from '../../assets/images/landing page/categories/category5.png
 import Category6 from '../../assets/images/landing page/categories/category6.png'
 import Category7 from '../../assets/images/landing page/categories/category7.png'
 import Category8 from '../../assets/images/landing page/categories/category8.png'
+import TypographyHeader from '../../components/TypographyHeader'
 
 const Categories = () => {
   return (
     <div style={{background:"#D9D9D9", paddingTop:"20px", paddingBottom:"5%"}}>
-        <Typography textAlign="center" variant='h1' color="#151A2E" fontWeight="bold" fontSize="65px" pt='15px' >Categories</Typography>
+        <TypographyHeader>
+            <div style={{color:"#151A2E"}}>Categories</div>
+        </TypographyHeader>
         <Grid container spacing={{md:8}} gap={8} gridAutoColumns={2} alignItems='center' justifyContent='center' pt={8}>
             <Grid item>
                 <div>
