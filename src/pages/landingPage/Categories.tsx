@@ -10,6 +10,41 @@ import Category7 from '../../assets/images/landing page/categories/category7.png
 import Category8 from '../../assets/images/landing page/categories/category8.png'
 import TypographyHeader from '../../components/TypographyHeader'
 
+const categoryDetails = [
+    {
+        image:Category1,
+        name:'Croissant'
+    },
+    {
+        image:Category2,
+        name:'Cookies'
+    },
+    {
+        image:Category3,
+        name:'Cupcakes'
+    },
+    {
+        image:Category4,
+        name:'Cakes'
+    },
+    {
+        image:Category5,
+        name:'Doughnuts'
+    },
+    {
+        image:Category6,
+        name:'Pies'
+    },
+    {
+        image:Category7,
+        name:'Bread'
+    },
+    {
+        image:Category8,
+        name:'Macaroons'
+    },
+]
+
 const Categories = () => {
   return (
     <div style={{background:"#D9D9D9", paddingTop:"20px", paddingBottom:"5%"}}>
@@ -17,54 +52,14 @@ const Categories = () => {
             <div style={{color:"#151A2E"}}>Categories</div>
         </TypographyHeader>
         <Grid container spacing={{md:8}} gap={8} gridAutoColumns={2} alignItems='center' justifyContent='center' pt={8}>
+            {categoryDetails.map((categoryDetail)=>(
             <Grid item>
                 <div>
-                    <img src={Category1} alt='pastry'/>
-                    <Typography color='#151A2E' fontWeight='800' textAlign='center' fontSize='30px' pt={3}>Croissant</Typography>
+                    <img src={categoryDetail.image} alt='pastry'/>
+                    <Typography color='#151A2E' fontWeight='800' textAlign='center' fontSize='30px' pt={3}>{categoryDetail.name}</Typography>
                 </div>
             </Grid>
-            <Grid item>
-                <div>
-                    <img src={Category2} alt='pastry'/>
-                    <Typography color='#151A2E' fontWeight='800' textAlign='center' fontSize='30px' pt={3}>Cookies</Typography>
-                </div>
-            </Grid>
-            <Grid item>
-                <div>
-                    <img src={Category3} alt='pastry'/>
-                    <Typography color='#151A2E' fontWeight='800' textAlign='center' fontSize='30px' pt={3}>Cupcakes</Typography>
-                </div>
-            </Grid>
-            <Grid item>
-                <div>
-                    <img src={Category4} alt='pastry'/>
-                    <Typography color='#151A2E' fontWeight='800' textAlign='center' fontSize='30px' pt={3}>Cakes</Typography>
-                </div>
-            </Grid>
-            <Grid item>
-                <div>
-                    <img src={Category5} alt='pastry'/>
-                    <Typography color='#151A2E' fontWeight='800' textAlign='center' fontSize='30px' pt={3}>Doughnuts</Typography>
-                </div>
-            </Grid>
-            <Grid item>
-                <div>
-                    <img src={Category6} alt='pastry'/>
-                    <Typography color='#151A2E' fontWeight='800' textAlign='center' fontSize='30px' pt={3}>Pies</Typography>
-                </div>
-            </Grid>
-            <Grid item>
-                <div>
-                    <img src={Category7} alt='pastry'/>
-                    <Typography color='#151A2E' fontWeight='800' textAlign='center' fontSize='30px' pt={3}>Bread</Typography>
-                </div>
-            </Grid>
-            <Grid item>
-                <div>
-                    <img src={Category8} alt='pastry'/>
-                    <Typography color='#151A2E' fontWeight='800' textAlign='center' fontSize='30px' pt={3}>Macaroons</Typography>
-                </div>
-            </Grid>
+            ))}
         </Grid>
     </div>
   )
