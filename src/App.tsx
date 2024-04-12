@@ -13,7 +13,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <Theme>
-    <div className="App" style={{background:"linear-gradient(to right, #2C3260, #151A2E)"}}>
+    <div className="App" style={{background:"linear-gradient(to right, #2C3260, #151A2E)", width:"100%", overflowX:"hidden"}}>
       <TopNavigation/>
       <Home/>
       <Categories/>
