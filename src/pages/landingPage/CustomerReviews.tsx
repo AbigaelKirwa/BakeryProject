@@ -17,12 +17,14 @@ const customerReviewDetails = [
         id:2,
         img:Review2,
         name:'Jessica Too',
-        comment:'When my order arrived, I was impressed by the careful packaging that ensured my pastries arrived fresh and intact. And oh, the taste! Each bite was a burst of flavor, confirming the expertise and passion of the bakers behind these delectable creations. Whether it was the fluffy croissants or the decadent cupcakes.'},
+        comment:'When my order arrived, I was impressed by the careful packaging that ensured my pastries arrived fresh and intact. And oh, the taste! Each bite was a burst of flavor, confirming the expertise and passion of the bakers behind these delectable creations. Whether it was the fluffy croissants or the decadent cupcakes.'
+    },
     {
         id:3,
         img:Review3,
         name:'Lissa Chebet',
-        comment:'Using this online bakery service was an absolute delight! As someone with a busy schedule, having the convenience of ordering artisanal pastries from the comfort of my home was a game-changer. The website was visually appealing and easy to navigate, allowing me to explore the diverse range of treats on offer.'}
+        comment:'Using this online bakery service was an absolute delight! As someone with a busy schedule, having the convenience of ordering artisanal pastries from the comfort of my home was a game-changer. The website was visually appealing and easy to navigate, allowing me to explore the diverse range of treats on offer.'
+    }
 ]
 
 const CustomerReviews = () => {
