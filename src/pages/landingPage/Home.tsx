@@ -6,34 +6,31 @@ import Confectionery from '../../assets/images/landing page/home/Confectionery.p
 import Doughnut from '../../assets/images/landing page/home/Doughnut.png';
 import Cookies from '../../assets/images/landing page/home/Cookies.png';
 
+const LeftFoodArray = [
+    {image:CakeIcon, heading:"Cakes", text:"Treat yourself to miniature delights topped with creamy frosting and whimsical decorations, each cupcake a delightful blend of moist cake and decadent sweetness."},
+    {image:Confectionery, heading:"Cupcakes", text:"Dive into a world of celebration with towering layers of sponge cake adorned with velvety buttercream, offering a symphony of flavors and textures in every slice."},
+]
+
+const RightFoodArray = [
+    {image:Doughnut, heading:"Doughnuts", text:"Savour the comforting taste of flaky pastry crusts filled with luscious fruit, rich custard, or savoury fillings, offering a slice of home-made goodness in every bite."},
+    {image:Cookies, heading:"Cookies", text:"Indulge in a delightful array of crispy, chewy, and flavourful cookies that are perfect for any sweet craving. Various flavours for every buyer."},
+]
+
 const Home = () => {
   return (
     <div style={{background:"linear-gradient(to bottom right, #2C3260, #000406)", paddingBottom:"5%"}}>
         <Typography textAlign="center" variant='h1' fontFamily='Carattere' color='white' pt='10px' fontSize='120px' >Oka Bakeries</Typography>
         <Grid container alignItems="center" justifyContent="center" spacing={{xs:2, md:10}} columns={{xs:1, sm:8, md:12}} pt="3em" pb="1em" sx={{pl:{md:'4em',xs:'2em'}}}>
             <Grid container xs={10} sm={8} md={3}>
-                <Grid item display="flex" flexDirection="column" justifyContent="center" alignItems="center">
-                    <Toolbar sx={{gap:"1em"}}>
-                        <img src={CakeIcon} alt='food' style={{width:"35%"}}/>
-                        <Typography variant='h6' paddingTop="12px" fontWeight="bold" color='#fff'>Cakes</Typography>
-                    </Toolbar>
-                    <Typography paragraph color="#fff" fontSize="13px" textAlign='justify' paddingTop='7px' lineHeight='27px'>
-                        Treat yourself to miniature delights topped with creamy frosting 
-                        and whimsical decorations, each cupcake a delightful blend of
-                        moist cake and decadent sweetness.
-                    </Typography>
-                </Grid>
-                <Grid item display="flex" flexDirection="column" justifyContent="center" alignItems="center">
-                    <Toolbar sx={{gap:"1em"}}>
-                        <img src={Confectionery} alt='food'  style={{width:"25%"}}/>
-                        <Typography variant='h6' paddingTop="12px" fontWeight="bold" color='#fff'>Cupcakes</Typography>
-                    </Toolbar>
-                    <Typography paragraph color="#fff" fontSize="13px" textAlign='justify' paddingTop='7px' lineHeight='27px'>
-                        Dive into a world of celebration with towering layers of sponge 
-                        cake adorned with velvety buttercream, offering a symphony of 
-                        flavors and textures in every slice.
-                    </Typography>
-                </Grid>
+                {LeftFoodArray.map((leftFood)=>(
+                    <Grid item display="flex" flexDirection="column" justifyContent="center" alignItems="center">
+                        <Toolbar sx={{gap:"1em"}}>
+                            <img src={leftFood.image} alt='food' style={{width:"35%"}}/>
+                            <Typography variant='h6' paddingTop="12px" fontWeight="bold" color='#fff'>{leftFood.heading}</Typography>
+                        </Toolbar>
+                        <Typography paragraph color="#fff" fontSize="13px" textAlign='justify' paddingTop='7px' lineHeight='27px'>{leftFood.text}</Typography>
+                    </Grid>
+                ))}
             </Grid>
             <Grid container sm={0} md={4} sx={{display:{md:'flex', sm:'none', xs:'none'}}} flexDirection="column" justifyContent="center" alignItems="center">
                 <Grid item display="flex" flexDirection="column" justifyContent="center" alignItems="center">
@@ -42,28 +39,15 @@ const Home = () => {
                 </Grid>
             </Grid>
             <Grid container xs={10} sm={8} md={3}>
-                <Grid item display="flex" flexDirection="column" justifyContent="center" alignItems="center">
-                    <Toolbar sx={{gap:"1em"}}>
-                        <img src={Doughnut} alt='food' style={{width:"25%"}}/>
-                        <Typography variant='h6' paddingTop="12px" fontWeight="bold" color='#fff'>Cupcakes</Typography>
-                    </Toolbar>
-                    <Typography paragraph color="#fff" fontSize="13px" textAlign='justify' paddingTop='7px' lineHeight='27px'>
-                        Savour the comforting taste of flaky pastry crusts filled with 
-                        luscious fruit, rich custard, or savoury fillings, offering a 
-                        slice of home-made goodness in every bite.
-                    </Typography>
-                </Grid>
-                <Grid item display="flex" flexDirection="column" justifyContent="center" alignItems="center">
-                    <Toolbar sx={{gap:"1em"}}>
-                        <img src={Cookies} alt='food'/>
-                        <Typography variant='h6' paddingTop="12px" fontWeight="bold" color='#fff'>Cookies</Typography>
-                    </Toolbar>
-                    <Typography paragraph color="#fff" fontSize="13px" textAlign='justify' paddingTop='7px' lineHeight='27px'>
-                        Indulge in a delightful array of crispy, chewy, and flavourful 
-                        cookies that are perfect for any sweet craving. Various flavours 
-                        for every buyer.
-                    </Typography>
-                </Grid>
+                {RightFoodArray.map((rightFood)=>(
+                    <Grid item display="flex" flexDirection="column" justifyContent="center" alignItems="center">
+                        <Toolbar sx={{gap:"1em"}}>
+                            <img src={rightFood.image} alt='food' style={{width:"35%"}}/>
+                            <Typography variant='h6' paddingTop="12px" fontWeight="bold" color='#fff'>{rightFood.heading}</Typography>
+                        </Toolbar>
+                        <Typography paragraph color="#fff" fontSize="13px" textAlign='justify' paddingTop='7px' lineHeight='27px'>{rightFood.text}</Typography>
+                    </Grid>
+                ))}
             </Grid>
         </Grid>
     </div>
