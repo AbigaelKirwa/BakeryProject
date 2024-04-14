@@ -5,7 +5,7 @@ import Category2 from '../../assets/images/landing page/categories/category2.png
 import Category3 from '../../assets/images/landing page/categories/category3.png'
 import Category4 from '../../assets/images/landing page/categories/category4.png'
 import Category5 from '../../assets/images/landing page/categories/category5.png'
-import Category6 from '../../assets/images/landing page/categories/category9.png'
+import Category6 from '../../assets/images/landing page/categories/category10.png'
 import Category7 from '../../assets/images/landing page/categories/category7.png'
 import Category8 from '../../assets/images/landing page/categories/category8.png'
 import TypographyHeader from '../../components/TypographyHeader'

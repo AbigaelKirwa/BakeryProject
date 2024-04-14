@@ -5,7 +5,7 @@ import TypographyHeader from '../../components/TypographyHeader'
 
 const About = () => {
   return (
-    <div style={{background:"#D9D9D9", paddingTop:"20px", paddingBottom:"5%"}}>
+    <div id="about" style={{background:"#D9D9D9", paddingTop:"20px", paddingBottom:"5%"}}>
       <TypographyHeader>
         <div style={{color:"#151A2E"}}>About Us</div>
       </TypographyHeader>

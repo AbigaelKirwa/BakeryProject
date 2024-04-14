@@ -4,7 +4,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useState } from 'react';
 
-const pages = ['Home', 'About', 'Categories', 'Apply']
+const pages = ['About', 'Categories', 'Customer Reviews', 'Apply' ]
 const settings = ['Profile', 'Account', 'Logout']
 
 
@@ -67,9 +67,11 @@ function ResponsiveAppBar() {
             {/* this box is displayed when the screen is large */}
             <Box sx={{flexGrow:1, display:{xs:'none', md:'flex'}}}>
               {pages.map((page)=>(
+                 <a href=""> 
                   <Button key={page} onClick={handleCloseNavMenu} sx={{my:2, px:3, color:'#ECC051', display:'block', fontWeight:'600', fontSize:'13px', textTransform:'none'}}>
-                    {page}
-                  </Button>
+                      {page}
+                    </Button>
+                  </a>
               ))}
             </Box>
 
