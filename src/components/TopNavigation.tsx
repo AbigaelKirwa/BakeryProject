@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Avatar, Box, Button, Container, IconButton, Menu, MenuItem,Toolbar,Typography } from '@mui/material';
+import { AppBar, Avatar, Box, Button, Container, IconButton, Link, Menu, MenuItem,Toolbar,Typography } from '@mui/material';
 import Tooltip from '@mui/material/Tooltip';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useState } from 'react';
@@ -67,11 +67,11 @@ function ResponsiveAppBar() {
             {/* this box is displayed when the screen is large */}
             <Box sx={{flexGrow:1, display:{xs:'none', md:'flex'}}}>
               {pages.map((page)=>(
-                 <a href=""> 
+                 <Link href={`#${page}`} sx={{textDecoration:"none"}}>
                   <Button key={page} onClick={handleCloseNavMenu} sx={{my:2, px:3, color:'#ECC051', display:'block', fontWeight:'600', fontSize:'13px', textTransform:'none'}}>
                       {page}
                     </Button>
-                  </a>
+                  </Link>
               ))}
             </Box>
 

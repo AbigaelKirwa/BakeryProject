@@ -23,7 +23,7 @@ const categoryDetails = [
 
 const Categories = () => {
   return (
-    <div style={{background:"#D9D9D9", paddingTop:"20px", paddingBottom:"5%"}}>
+    <div id='Categories' style={{background:"#D9D9D9", paddingTop:"20px", paddingBottom:"5%"}}>
         <TypographyHeader>
             <div style={{color:"#151A2E"}}>Categories</div>
         </TypographyHeader>
