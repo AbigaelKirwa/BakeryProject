@@ -1,7 +1,6 @@
 import { Grid, Typography } from '@mui/material'
 import React from 'react'
 import AboutPlatter from "../../assets/images/landing page/about/about-platter.png"
-import AboutCake from "../../assets/images/landing page/about/about-cake.png"
 import TypographyHeader from '../../components/TypographyHeader'
 
 const About = () => {
@@ -25,7 +24,7 @@ const About = () => {
         </Grid> 
         <Grid item md={6} sx={{display:{md:"flex", sm:"none", xs:'none'}, justifyContent:"flex-end"}}>
           <div>
-            <img src={AboutPlatter} style={{width:"100%"}}/>
+            <img src={AboutPlatter} style={{width:"100%"}} alt='cake'/>
           </div>
         </Grid>
       </Grid>

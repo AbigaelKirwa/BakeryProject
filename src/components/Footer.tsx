@@ -13,7 +13,7 @@ const Footer = () => {
         <Typography textAlign='center' color='#151A2E' fontWeight='700'>Westlands, Nairobi, Kenya.</Typography>
         <Toolbar sx={{alignItems:"center", justifyContent:"center", gap:"1em"}}>
           {socialMediaIcons.map((socialMediaIcon)=>(
-            <img key={socialMediaIcon} src={socialMediaIcon} style={{width:"35px"}}/>
+            <img key={socialMediaIcon} src={socialMediaIcon} style={{width:"35px"}} alt='external links'/>
           ))}
         </Toolbar>
         <Toolbar sx={{alignItems:"center", justifyContent:"center", gap:"1.5em"}}>
