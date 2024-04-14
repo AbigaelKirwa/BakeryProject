@@ -11,14 +11,14 @@ import Category8 from '../../assets/images/landing page/categories/category8.png
 import TypographyHeader from '../../components/TypographyHeader'
 
 const categoryDetails = [
-    { image:Category1, name:'Croissant'},
-    { image:Category2, name:'Cookies'},
-    { image:Category3, name:'Cupcakes'},
-    { image:Category4, name:'Cakes'},
-    { image:Category5, name:'Doughnuts'},
-    { image:Category6, name:'Pies'},
-    { image:Category7, name:'Bread'},
-    { image:Category8, name:'Macaroons'},
+    { id:1, image:Category1, name:'Croissant'},
+    { id:2, image:Category2, name:'Cookies'},
+    { id:3, image:Category3, name:'Cupcakes'},
+    { id:4, image:Category4, name:'Cakes'},
+    { id:5, image:Category5, name:'Doughnuts'},
+    { id:6, image:Category6, name:'Pies'},
+    { id:7, image:Category7, name:'Bread'},
+    { id:8, image:Category8, name:'Macaroons'},
 ]
 
 const Categories = () => {
@@ -29,7 +29,7 @@ const Categories = () => {
         </TypographyHeader>
         <Grid container spacing={{md:8}} gap={8} gridAutoColumns={2} alignItems='center' justifyContent='center' pt={8}>
             {categoryDetails.map((categoryDetail)=>(
-            <Grid item>
+            <Grid item key={categoryDetail.id}>
                 <div>
                     <img src={categoryDetail.image} alt='pastry'/>
                     <Typography color='#151A2E' fontWeight='800' textAlign='center' fontSize='30px' pt={3}>{categoryDetail.name}</Typography>

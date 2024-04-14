@@ -35,7 +35,7 @@ const CustomerReviews = () => {
         </TypographyHeader>
         <Grid container spacing={12} columns={{md:12, sm:8, xs:4}} alignItems='center' justifyContent='center' pt="5%" px="3%">
             {customerReviewDetails.map((customerReviewDetail)=>(
-                <Grid item md={4} sm={4} xs={3}>
+                <Grid item md={4} sm={4} xs={3} key={customerReviewDetail.id}>
                     <div style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center'}}>
                                 <img src={customerReviewDetail.img} alt='customer' style={{width:"60%"}}/>
                                 <Typography color='#fff' fontWeight='700' fontSize='23px' pt='5%'> {customerReviewDetail.name} </Typography>
