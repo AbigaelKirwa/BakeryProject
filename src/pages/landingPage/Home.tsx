@@ -19,7 +19,7 @@ const RightFoodArray = [
 const Home = () => {
   return (
     <div style={{background:"linear-gradient(to bottom right, #2C3260, #000406)", paddingBottom:"5%"}}>
-        <Typography textAlign="center" variant='h1' fontFamily='Carattere' color='white' pt='10px' fontSize='120px' >Oka Bakeries</Typography>
+        <Typography textAlign="center" variant='h1' fontFamily='Carattere' color='white' fontSize='120px' >Oka Bakeries</Typography>
         <Grid container item alignItems="center" justifyContent="center" spacing={{xs:2, md:2}} columns={{xs:1, sm:8, md:12}} pb="1em">
             <Grid container item xs={10} sm={8} md={3}>
                 {LeftFoodArray.map((leftFood)=>(
