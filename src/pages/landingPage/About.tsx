@@ -11,7 +11,7 @@ const About = () => {
       </TypographyHeader>
       <Grid container spacing={{md:8}} columns={{md:12, sm:8, xs:8}} sx={{mt:{md:'-23px',sm:'30px', xs:'40px'}}} display='flex' alignItems='center' justifyContent='center'>
         <Grid item md={6} sm={6} xs={6}>
-          <Typography textAlign='justify' lineHeight='50px' pl='4em' sx={{pl:{md:'4em', sm:'0'}}}>
+          <Typography textAlign='justify' lineHeight='50px' pl='4em' sx={{pl:{md:'4em', sm:'0'}, fontSize:{md:'15px',sm:'12px'}}}>
             Oka bakery is your one stop online shop for all baked products. 
             Gone are the days where you had to use multiple social media apps 
             to reach home bakers. Using our application, you can shop from multiple 

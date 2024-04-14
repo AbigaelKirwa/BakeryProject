@@ -27,16 +27,27 @@ const Categories = () => {
         <TypographyHeader>
             <div style={{color:"#151A2E"}}>Categories</div>
         </TypographyHeader>
-        <Grid container spacing={{md:8}} gap={8} gridAutoColumns={2} alignItems='center' justifyContent='center' pt={8}>
+        {/* <Grid container spacing={{md:2}} gap={2} md={12} alignItems='center' justifyContent='center' pt={8}>
             {categoryDetails.map((categoryDetail)=>(
-            <Grid item key={categoryDetail.id}>
-                <div>
-                    <img src={categoryDetail.image} alt='pastry'/>
+            <Grid item md={4} sm={6} xs={2} key={categoryDetail.id}>
+                <div style={{display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center"}}>
+                    <img src={categoryDetail.image} style={{width:"80%"}} alt='pastry'/>
                     <Typography color='#151A2E' fontWeight='800' textAlign='center' fontSize='30px' pt={3}>{categoryDetail.name}</Typography>
                 </div>
             </Grid>
             ))}
-        </Grid>
+        </Grid> */}
+        <Grid container gap={6} alignItems='center' justifyContent='center' pt={8}>
+    {categoryDetails.map((categoryDetail)=>(
+    <Grid item xs={9} sm={5} md={3.5} key={categoryDetail.id}>
+        <div style={{display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center"}}>
+            <img src={categoryDetail.image} style={{width:"100%"}} alt='pastry'/>
+            <Typography color='#151A2E' fontWeight='800' textAlign='center' fontSize='25px' pt={3}>{categoryDetail.name}</Typography>
+        </div>
+    </Grid>
+    ))}
+</Grid>
+
     </div>
   )
 }
