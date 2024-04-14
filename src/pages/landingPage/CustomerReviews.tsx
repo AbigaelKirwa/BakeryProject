@@ -29,7 +29,7 @@ const customerReviewDetails = [
 
 const CustomerReviews = () => {
   return (
-    <div style={{paddingBottom:"5%"}}>
+    <div style={{background:"linear-gradient(to bottom right, #2C3260, #000406)", paddingBottom:"5%"}}>
         <TypographyHeader>
             <div style={{color:"#ECC051"}}>Customer Reviews</div>
         </TypographyHeader>

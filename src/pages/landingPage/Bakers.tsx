@@ -24,7 +24,7 @@ const imageWidth = (src:string) =>{
 
 const Bakers = () => {
   return (
-    <div style={{paddingBottom:"5%"}}>
+    <div style={{background:"linear-gradient(to bottom right, #2C3260, #000406)", paddingBottom:"5%"}}>
         <Typography textAlign="center" variant='h1' fontFamily='Carattere' color='#ECC051' pt='0.5em' fontSize='80px' >Our Bakers</Typography>
         <Grid container gap={7} gridAutoColumns={5} alignItems="center" justifyContent="center" pt='1em'>
             {confectionaryDetails.map((confectionaryDetail)=>(

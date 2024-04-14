@@ -30,7 +30,7 @@ function ResponsiveAppBar() {
   }
  
   return (
-    <AppBar position='static' sx={{backgroundColor:"transparent"}} >
+    <AppBar position='static' sx={{backgroundColor:"transparent", boxShadow:"none"}} >
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             {/* this box is displayed when the screen is small in size */}
