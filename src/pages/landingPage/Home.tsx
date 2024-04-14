@@ -35,7 +35,7 @@ const Home = () => {
             <Grid container item sm={0} md={4} sx={{display:{md:'flex', sm:'none', xs:'none'}}} flexDirection="column" justifyContent="center" alignItems="center">
                 <Grid item display="flex" flexDirection="column" justifyContent="center" alignItems="center">
                     <img alt="cake" src={StrawBerryCake} style={{paddingLeft:"2em", width:"90%"}}/>
-                    <Button sx={{backgroundColor:"#ECC051", borderRadius:"50px", width:"70%", height:"50px", fontSize:"120%", color:"#151A2E", fontWeight:"bold", marginBottom:"1em", marginTop:"-20px"}}>Buy Now</Button>
+                    <Button sx={{backgroundColor:"#ECC051", borderRadius:"50px", width:"70%", height:"50px", fontSize:"120%", color:"#151A2E", fontWeight:"bold", marginBottom:"1em", marginTop:"-20px", '&:hover':{color:"#ECC051"}}}>Buy Now</Button>
                 </Grid>
             </Grid>
             <Grid container item xs={10} sm={8} md={3}>
