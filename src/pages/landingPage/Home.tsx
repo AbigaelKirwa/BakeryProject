@@ -38,7 +38,7 @@ const Home = () => {
                 <Grid container item sm={0} md={4} sx={{display:{md:'flex', sm:'none', xs:'none'}}} flexDirection="column" justifyContent="center" alignItems="center">
                     <Grid item display="flex" flexDirection="column" justifyContent="center" alignItems="center">
                         {loading?(
-                            <Skeleton variant='rectangular' width={210} height={118}/>
+                            <Skeleton variant='rectangular' width={210} height={118} sx={{mb:"10%"}}/>
                             ): null
                         }
                         <img alt="cake" src={StrawBerryCake} style={{paddingLeft:"2em", width:"90%", display:loading? 'none':'block'}} onLoad={()=>setLoading(false)}/>
