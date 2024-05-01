@@ -41,7 +41,7 @@ const Home = () => {
                             <Skeleton variant='rectangular' width={210} height={118}/>
                             ): null
                         }
-                        <img alt="cake" src={StrawBerryCake} style={{paddingLeft:"2em", width:"90%"}} onLoad={()=>setLoading(false)}/>
+                        <img alt="cake" src={StrawBerryCake} style={{paddingLeft:"2em", width:"90%", display:loading? 'none':'block'}} onLoad={()=>setLoading(false)}/>
                         <Button sx={{background:"linear-gradient(to right, #ECC051, #DAA214)", boxShadow:"10px 20px 10px rgba(0,0,0,0.5)", borderRadius:"50px", width:"60%", height:"50px", fontSize:"120%", color:"#151A2E", fontWeight:"bold", marginBottom:"1em", marginTop:"5px" }}>Buy Now</Button>
                     </Grid>
                 </Grid>
