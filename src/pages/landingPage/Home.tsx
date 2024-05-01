@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Grid, Toolbar, Typography } from '@mui/material'
+import { Button, Grid, Skeleton, Toolbar, Typography } from '@mui/material'
 import StrawBerryCake from '../../assets/images/landing page/home/falling-doughnuts2.png';
 import CakeIcon from '../../assets/images/landing page/home/Cake.png';
 import Confectionery from '../../assets/images/landing page/home/Confectionery.png';
@@ -17,6 +17,7 @@ const RightFoodArray = [
 ]
 
 const Home = () => {
+    const [loading, setLoading] = useState(true)
     return (
         <div style={{background:"linear-gradient(to bottom right, #2C3260, #000406)", paddingBottom:"5%"}}>
             <div>
@@ -36,7 +37,11 @@ const Home = () => {
                 </Grid>
                 <Grid container item sm={0} md={4} sx={{display:{md:'flex', sm:'none', xs:'none'}}} flexDirection="column" justifyContent="center" alignItems="center">
                     <Grid item display="flex" flexDirection="column" justifyContent="center" alignItems="center">
-                        <img alt="cake" src={StrawBerryCake} style={{paddingLeft:"2em", width:"90%"}}/>
+                        {loading?(
+                            <Skeleton variant='rectangular' width={210} height={118}/>
+                            ): null
+                        }
+                        <img alt="cake" src={StrawBerryCake} style={{paddingLeft:"2em", width:"90%"}} onLoad={()=>setLoading(false)}/>
                         <Button sx={{background:"linear-gradient(to right, #ECC051, #DAA214)", boxShadow:"10px 20px 10px rgba(0,0,0,0.5)", borderRadius:"50px", width:"60%", height:"50px", fontSize:"120%", color:"#151A2E", fontWeight:"bold", marginBottom:"1em", marginTop:"5px" }}>Buy Now</Button>
                     </Grid>
                 </Grid>
