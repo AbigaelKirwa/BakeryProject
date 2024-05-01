@@ -6,20 +6,19 @@ import TypographyHeader from '../../components/TypographyHeader'
 const About = () => {
   return (
     <div id="About" style={{background:"#D9D9D9", paddingTop:"20px", paddingBottom:"5%"}}>
-      <TypographyHeader>
-        <div style={{color:"#151A2E"}}>About Us</div>
+      <TypographyHeader >
+        <div id="sectionName" style={{color:"#151A2E"}}>About Us</div>
       </TypographyHeader>
       <Grid container spacing={{md:8}} columns={{md:12, sm:8, xs:8}} sx={{mt:{md:'-23px',sm:'30px', xs:'40px'}}} display='flex' alignItems='center' justifyContent='center'>
         <Grid item md={6} sm={6} xs={6}>
-          <Typography textAlign='justify' lineHeight='50px' pl='4em' sx={{pl:{md:'4em', sm:'0'}, fontSize:{md:'15px',sm:'12px'}}}>
-            Oka bakery is your one stop online shop for all baked products. 
-            Gone are the days where you had to use multiple social media apps 
-            to reach home bakers. Using our application, you can shop from multiple 
-            home bakers and have your goods delivered in one go! Planning for events 
-            and personal shopping has never been easier!
-            Choose from different categories of confectioneries and pick the specific flavour and baker 
-            you would like to order from, and add the item to cart. You can select items from different 
-            vendors and place them all in your cart. Order and pay for the items and voila! We will deliver it to you.
+          <Typography textAlign='justify' pl='4em' sx={{pl:{md:'4em', sm:'0'}, fontSize:{md:'15px',sm:'14px', xs:'13px'}, lineHeight:{md:'50px', sm:'50px', xs:'40px'}}}>
+            Welcome to Oka Bakery, your go-to online shop for all things delightfully 
+            indulgent! Our bakery serves up a mouthwatering array of baked goods, expertly crafted by our team of passionate bakers. 
+            From the fluffiest doughnuts sprinkled with sugar to the richest, most decadent cakes, each 
+            of our creations is made using only the finest ingredients. Our commitment to quality and 
+            flavor shines through in every bite, whether it's a slice of our velvety chocolate cake or 
+            one of our signature custard-filled pastries. With just a few clicks, you can have your favorite sweets 
+            delivered right to your doorstep, freshly baked and beautifully packaged. 
           </Typography>
         </Grid> 
         <Grid item md={6} sx={{display:{md:"flex", sm:"none", xs:'none'}, justifyContent:"flex-end"}}>

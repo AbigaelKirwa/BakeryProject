@@ -32,7 +32,7 @@ const Categories = () => {
             <Grid item xs={10} sm={3.5} md={4.5} key={categoryDetail.id}  sx={{'&:hover': {transform: 'scale(1.05)', '& img': {width: '110%'}}}}>
                 <div style={{display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center"}}>
                     <img src={categoryDetail.image} style={{width:"100%"}} alt='pastry'/>
-                    <Typography color='#151A2E' fontWeight='800' textAlign='center' fontSize='25px' pt={3}>{categoryDetail.name}</Typography>
+                    <Typography color='#151A2E' fontWeight='800' textAlign='center' fontSize='25px' pt={3} sx={{fontSize:{md:'25px', sm:'18px', xs:'25px'}}}>{categoryDetail.name}</Typography>
                 </div>
             </Grid>
             ))}
